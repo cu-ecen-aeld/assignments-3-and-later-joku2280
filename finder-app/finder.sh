@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 # -------------------------------------------------------
-
 
 #Check for argument count
 #exit if not correct
