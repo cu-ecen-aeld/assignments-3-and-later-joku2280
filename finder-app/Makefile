@@ -4,7 +4,7 @@ else
 CC = gcc
 endif
 
-default: writer.c
+all: writer.c
 	$(CC) writer.c -o writer
 
 .PHONY: clean
