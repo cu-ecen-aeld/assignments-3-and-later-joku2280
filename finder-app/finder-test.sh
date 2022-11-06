@@ -10,7 +10,6 @@ NUMFILES=10
 WRITESTR=AELD_IS_FUN
 WRITEDIR=/tmp/aeld-data
 username=$(cat /etc/finder-app/conf/username.txt)
-REASULTFILE=/tmp/assignment4-result.txt
 
 if [ $# -lt 3 ]
 then
@@ -66,7 +65,9 @@ OUTPUTSTRING=$(finder.sh "$WRITEDIR" "$WRITESTR")
 rm -rf /tmp/aeld-data
 
 set +e
-echo ${OUTPUTSTRING} > ${REASULTFILE}
+set u
+set x
+echo "$OUTPUTSTRING" > /tmp/assignment4-result.txt
 echo ${OUTPUTSTRING} | grep "${MATCHSTR}"
 if [ $? -eq 0 ]; then
 	echo "success"
