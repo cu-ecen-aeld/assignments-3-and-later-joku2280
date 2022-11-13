@@ -1,7 +1,7 @@
 ifdef CROSS_COMPILE
-CC = $(CROSS_COMPILE)gcc
+CC = $(CROSS_COMPILE)gcc -g -Wall -Werror
 else
-CC = gcc
+CC = gcc -g -Wall -Werror
 endif
 
 all: writer.c
