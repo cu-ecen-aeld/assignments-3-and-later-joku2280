@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
 	sigaction(SIGTERM, &sa, NULL);
 
 
-    getaddrinfo("localhost", PORT, &hints, &servinfo);
+    getaddrinfo("0.0.0.0", PORT, &hints, &servinfo);
 
     if ((sock_fd = socket(PF_INET, SOCK_STREAM, 0)) == -1)
 		return (-1);
